@@ -1,0 +1,320 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		79981BD717494284005B5771 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79981BD617494284005B5771 /* UIKit.framework */; };
+		79981BD917494284005B5771 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79981BD817494284005B5771 /* Foundation.framework */; };
+		79981BDB17494284005B5771 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79981BDA17494284005B5771 /* CoreGraphics.framework */; };
+		79981BE117494284005B5771 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 79981BDF17494284005B5771 /* InfoPlist.strings */; };
+		79981BE317494284005B5771 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 79981BE217494284005B5771 /* main.m */; };
+		79981BE717494284005B5771 /* GOAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 79981BE617494284005B5771 /* GOAppDelegate.m */; };
+		79981BE917494284005B5771 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 79981BE817494284005B5771 /* Default.png */; };
+		79981BEB17494284005B5771 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 79981BEA17494284005B5771 /* Default@2x.png */; };
+		79981BED17494284005B5771 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 79981BEC17494284005B5771 /* Default-568h@2x.png */; };
+		79981BF017494284005B5771 /* GOViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79981BEF17494284005B5771 /* GOViewController.m */; };
+		79981BF317494284005B5771 /* GOViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79981BF117494284005B5771 /* GOViewController_iPhone.xib */; };
+		79981BF617494284005B5771 /* GOViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79981BF417494284005B5771 /* GOViewController_iPad.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		79981BD317494284005B5771 /* GOExtendedUIView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GOExtendedUIView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		79981BD617494284005B5771 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		79981BD817494284005B5771 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		79981BDA17494284005B5771 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		79981BDE17494284005B5771 /* GOExtendedUIView-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GOExtendedUIView-Info.plist"; sourceTree = "<group>"; };
+		79981BE017494284005B5771 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		79981BE217494284005B5771 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		79981BE417494284005B5771 /* GOExtendedUIView-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GOExtendedUIView-Prefix.pch"; sourceTree = "<group>"; };
+		79981BE517494284005B5771 /* GOAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GOAppDelegate.h; sourceTree = "<group>"; };
+		79981BE617494284005B5771 /* GOAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GOAppDelegate.m; sourceTree = "<group>"; };
+		79981BE817494284005B5771 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		79981BEA17494284005B5771 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		79981BEC17494284005B5771 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		79981BEE17494284005B5771 /* GOViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GOViewController.h; sourceTree = "<group>"; };
+		79981BEF17494284005B5771 /* GOViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GOViewController.m; sourceTree = "<group>"; };
+		79981BF217494284005B5771 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/GOViewController_iPhone.xib; sourceTree = "<group>"; };
+		79981BF517494284005B5771 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/GOViewController_iPad.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		79981BD017494284005B5771 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79981BD717494284005B5771 /* UIKit.framework in Frameworks */,
+				79981BD917494284005B5771 /* Foundation.framework in Frameworks */,
+				79981BDB17494284005B5771 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		79981BCA17494284005B5771 = {
+			isa = PBXGroup;
+			children = (
+				79981BDC17494284005B5771 /* GOExtendedUIView */,
+				79981BD517494284005B5771 /* Frameworks */,
+				79981BD417494284005B5771 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		79981BD417494284005B5771 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				79981BD317494284005B5771 /* GOExtendedUIView.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		79981BD517494284005B5771 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				79981BD617494284005B5771 /* UIKit.framework */,
+				79981BD817494284005B5771 /* Foundation.framework */,
+				79981BDA17494284005B5771 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		79981BDC17494284005B5771 /* GOExtendedUIView */ = {
+			isa = PBXGroup;
+			children = (
+				79981BE517494284005B5771 /* GOAppDelegate.h */,
+				79981BE617494284005B5771 /* GOAppDelegate.m */,
+				79981BEE17494284005B5771 /* GOViewController.h */,
+				79981BEF17494284005B5771 /* GOViewController.m */,
+				79981BF117494284005B5771 /* GOViewController_iPhone.xib */,
+				79981BF417494284005B5771 /* GOViewController_iPad.xib */,
+				79981BDD17494284005B5771 /* Supporting Files */,
+			);
+			path = GOExtendedUIView;
+			sourceTree = "<group>";
+		};
+		79981BDD17494284005B5771 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				79981BDE17494284005B5771 /* GOExtendedUIView-Info.plist */,
+				79981BDF17494284005B5771 /* InfoPlist.strings */,
+				79981BE217494284005B5771 /* main.m */,
+				79981BE417494284005B5771 /* GOExtendedUIView-Prefix.pch */,
+				79981BE817494284005B5771 /* Default.png */,
+				79981BEA17494284005B5771 /* Default@2x.png */,
+				79981BEC17494284005B5771 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		79981BD217494284005B5771 /* GOExtendedUIView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 79981BF917494284005B5771 /* Build configuration list for PBXNativeTarget "GOExtendedUIView" */;
+			buildPhases = (
+				79981BCF17494284005B5771 /* Sources */,
+				79981BD017494284005B5771 /* Frameworks */,
+				79981BD117494284005B5771 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GOExtendedUIView;
+			productName = GOExtendedUIView;
+			productReference = 79981BD317494284005B5771 /* GOExtendedUIView.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		79981BCB17494284005B5771 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = GO;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Goppinath Thurairajah";
+			};
+			buildConfigurationList = 79981BCE17494284005B5771 /* Build configuration list for PBXProject "GOExtendedUIView" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 79981BCA17494284005B5771;
+			productRefGroup = 79981BD417494284005B5771 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				79981BD217494284005B5771 /* GOExtendedUIView */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		79981BD117494284005B5771 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79981BE117494284005B5771 /* InfoPlist.strings in Resources */,
+				79981BE917494284005B5771 /* Default.png in Resources */,
+				79981BEB17494284005B5771 /* Default@2x.png in Resources */,
+				79981BED17494284005B5771 /* Default-568h@2x.png in Resources */,
+				79981BF317494284005B5771 /* GOViewController_iPhone.xib in Resources */,
+				79981BF617494284005B5771 /* GOViewController_iPad.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		79981BCF17494284005B5771 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79981BE317494284005B5771 /* main.m in Sources */,
+				79981BE717494284005B5771 /* GOAppDelegate.m in Sources */,
+				79981BF017494284005B5771 /* GOViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		79981BDF17494284005B5771 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				79981BE017494284005B5771 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		79981BF117494284005B5771 /* GOViewController_iPhone.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				79981BF217494284005B5771 /* en */,
+			);
+			name = GOViewController_iPhone.xib;
+			sourceTree = "<group>";
+		};
+		79981BF417494284005B5771 /* GOViewController_iPad.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				79981BF517494284005B5771 /* en */,
+			);
+			name = GOViewController_iPad.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		79981BF717494284005B5771 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		79981BF817494284005B5771 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		79981BFA17494284005B5771 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GOExtendedUIView/GOExtendedUIView-Prefix.pch";
+				INFOPLIST_FILE = "GOExtendedUIView/GOExtendedUIView-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		79981BFB17494284005B5771 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GOExtendedUIView/GOExtendedUIView-Prefix.pch";
+				INFOPLIST_FILE = "GOExtendedUIView/GOExtendedUIView-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		79981BCE17494284005B5771 /* Build configuration list for PBXProject "GOExtendedUIView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				79981BF717494284005B5771 /* Debug */,
+				79981BF817494284005B5771 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		79981BF917494284005B5771 /* Build configuration list for PBXNativeTarget "GOExtendedUIView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				79981BFA17494284005B5771 /* Debug */,
+				79981BFB17494284005B5771 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 79981BCB17494284005B5771 /* Project object */;
+}
