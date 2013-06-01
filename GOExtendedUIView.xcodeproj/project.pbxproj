@@ -19,6 +19,7 @@
 		79981BF017494284005B5771 /* GOViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79981BEF17494284005B5771 /* GOViewController.m */; };
 		79981BF317494284005B5771 /* GOViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79981BF117494284005B5771 /* GOViewController_iPhone.xib */; };
 		79981BF617494284005B5771 /* GOViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79981BF417494284005B5771 /* GOViewController_iPad.xib */; };
+		79ADCF741750CC14005500F5 /* UIView+GOExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 79ADCF731750CC14005500F5 /* UIView+GOExtension.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,8 @@
 		79981BEF17494284005B5771 /* GOViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GOViewController.m; sourceTree = "<group>"; };
 		79981BF217494284005B5771 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/GOViewController_iPhone.xib; sourceTree = "<group>"; };
 		79981BF517494284005B5771 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/GOViewController_iPad.xib; sourceTree = "<group>"; };
+		79ADCF721750CC14005500F5 /* UIView+GOExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIView+GOExtension.h"; path = "lib/UIView+GOExtension.h"; sourceTree = "<group>"; };
+		79ADCF731750CC14005500F5 /* UIView+GOExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView+GOExtension.m"; path = "lib/UIView+GOExtension.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +88,7 @@
 		79981BDC17494284005B5771 /* GOExtendedUIView */ = {
 			isa = PBXGroup;
 			children = (
+				79ADCF751750CC2A005500F5 /* lib */,
 				79981BE517494284005B5771 /* GOAppDelegate.h */,
 				79981BE617494284005B5771 /* GOAppDelegate.m */,
 				79981BEE17494284005B5771 /* GOViewController.h */,
@@ -108,6 +112,15 @@
 				79981BEC17494284005B5771 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		79ADCF751750CC2A005500F5 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				79ADCF721750CC14005500F5 /* UIView+GOExtension.h */,
+				79ADCF731750CC14005500F5 /* UIView+GOExtension.m */,
+			);
+			name = lib;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -181,6 +194,7 @@
 				79981BE317494284005B5771 /* main.m in Sources */,
 				79981BE717494284005B5771 /* GOAppDelegate.m in Sources */,
 				79981BF017494284005B5771 /* GOViewController.m in Sources */,
+				79ADCF741750CC14005500F5 /* UIView+GOExtension.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -313,6 +327,7 @@
 				79981BFB17494284005B5771 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
