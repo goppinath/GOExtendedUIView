@@ -22,7 +22,7 @@
 @implementation UIView (GOExtension)
 
 #pragma mark -
-#pragma mark - custom setters
+#pragma mark - custom getters
 
 - (CGPoint)origin {
     
@@ -55,7 +55,7 @@
 }
 
 #pragma mark -
-#pragma mark - custom getters
+#pragma mark - custom setters
 
 - (void)setX:(CGFloat)x {
     
@@ -107,9 +107,34 @@
 
 - (void)setBorderWidth:(CGFloat)width color:(UIColor *)color cornerRadius:(CGFloat)radius {
     
+    [self setBorderWidth:width color:color cornerRadius:radius backgroundColor:nil];
+}
+
+- (void)setBorderWidth:(CGFloat)width color:(UIColor *)color cornerRadius:(CGFloat)radius backgroundColor:(UIColor *)backgroundColor {
+    
     [self.layer setBorderWidth:width];
     [self.layer setBorderColor:color.CGColor];
     [self.layer setCornerRadius:radius];
+    [self.layer setBackgroundColor:backgroundColor.CGColor];
+}
+
+- (void)setDashedBorderWidth:(CGFloat)width color:(UIColor *)color cornerRadius:(CGFloat)radius {
+    
+    [self setDashedBorderWidth:width lineDashPattern:@[[NSNumber numberWithInt:10], [NSNumber numberWithInt:5]] color:color cornerRadius:radius];
+}
+
+- (void)setDashedBorderWidth:(CGFloat)width lineDashPattern:(NSArray *)lineDashPattern color:(UIColor *)color cornerRadius:(CGFloat)radius {
+    
+    CAShapeLayer *shapeLayer = [CAShapeLayer layer];
+    
+    [shapeLayer setPath:[UIBezierPath bezierPathWithRoundedRect:CGRectMake(0.0f, 0.0f, self.width, self.height) cornerRadius:radius].CGPath];
+    
+    [shapeLayer setStrokeColor:color.CGColor];
+    [shapeLayer setFillColor:nil];
+    [shapeLayer setLineWidth:width];
+    [shapeLayer setLineDashPattern:lineDashPattern];
+    
+    [self.layer addSublayer:shapeLayer];
 }
 
 #pragma mark -
@@ -153,47 +178,47 @@
 
 - (void)printX {
     
-    NSLog(@"GOExtension ==> X is:%f", self.x);
+    NSLog(@"%@ ==> X is:%f", NSStringFromClass([self class]), self.x);
 }
 
 - (void)printY {
     
-    NSLog(@"GOExtension ==> Y is:%f", self.y);
+    NSLog(@"%@ ==> Y is:%f", NSStringFromClass([self class]), self.y);
 }
 
 - (void)printWidth {
     
-    NSLog(@"GOExtension ==> Width is:%f", self.width);
+    NSLog(@"%@ ==> Width is:%f", NSStringFromClass([self class]), self.width);
 }
 
 - (void)printHeight {
     
-    NSLog(@"GOExtension ==> Height is:%f", self.height);
+    NSLog(@"%@ ==> Height is:%f", NSStringFromClass([self class]), self.height);
 }
 
 - (void)printOrigin {
     
-    NSLog(@"GOExtension ==> Origin::X is:%f, Y is:%f", self.x, self.y);
+    NSLog(@"%@ ==> Origin::X is:%f, Y is:%f", NSStringFromClass([self class]), self.x, self.y);
 }
 
 - (void)printSize {
     
-    NSLog(@"GOExtension ==> Size::Width is:%f, Height is:%f", self.width, self.height);
+    NSLog(@"%@ ==> Size::Width is:%f, Height is:%f", NSStringFromClass([self class]), self.width, self.height);
 }
 
 - (void)prinCenter {
     
-    NSLog(@"GOExtension ==> Center::X is:%f, Y is:%f", self.center.x, self.center.y);
+    NSLog(@"%@ ==> Center::X is:%f, Y is:%f", NSStringFromClass([self class]), self.center.x, self.center.y);
 }
 
 - (void)printFrame {
     
-    NSLog(@"GOExtension ==> Frame::Width is:%f, Height is:%f, X is:%f, Y is:%f", self.x, self.y, self.width, self.height);
+    NSLog(@"%@ ==> Frame::Width is:%f, Height is:%f, X is:%f, Y is:%f", NSStringFromClass([self class]), self.x, self.y, self.width, self.height);
 }
 
 - (void)printBounds {
     
-    NSLog(@"GOExtension ==> Bounds::Width is:%f, Height is:%f, X is:%f, Y is:%f", self.bounds.origin.x, self.bounds.origin.y, self.bounds.size.width, self.bounds.size.height);
+    NSLog(@"%@ ==> Bounds::Width is:%f, Height is:%f, X is:%f, Y is:%f", NSStringFromClass([self class]), self.bounds.origin.x, self.bounds.origin.y, self.bounds.size.width, self.bounds.size.height);
 }
 
 @end
