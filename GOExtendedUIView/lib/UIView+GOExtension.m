@@ -105,25 +105,29 @@
 #pragma mark -
 #pragma mark - custom layer property setters
 
-- (void)setBorderWidth:(CGFloat)width color:(UIColor *)color cornerRadius:(CGFloat)radius {
+- (void)setBorderWithColor:(UIColor *)color width:(CGFloat)width cornerRadius:(CGFloat)radius {
     
-    [self setBorderWidth:width color:color cornerRadius:radius backgroundColor:nil];
+    [self setBorderWithColor:color width:width cornerRadius:radius backgroundColor:nil];
 }
 
-- (void)setBorderWidth:(CGFloat)width color:(UIColor *)color cornerRadius:(CGFloat)radius backgroundColor:(UIColor *)backgroundColor {
+- (void)setBorderWithColor:(UIColor *)color width:(CGFloat)width cornerRadius:(CGFloat)radius backgroundColor:(UIColor *)backgroundColor {
     
-    [self.layer setBorderWidth:width];
     [self.layer setBorderColor:color.CGColor];
+    [self.layer setBorderWidth:width];
     [self.layer setCornerRadius:radius];
     [self.layer setBackgroundColor:backgroundColor.CGColor];
+    [self.layer setMasksToBounds:YES];
 }
 
-- (void)setDashedBorderWidth:(CGFloat)width color:(UIColor *)color cornerRadius:(CGFloat)radius {
+- (void)setDashedBorderWithColor:(UIColor *)color width:(CGFloat)width cornerRadius:(CGFloat)radius; {
     
-    [self setDashedBorderWidth:width lineDashPattern:@[[NSNumber numberWithInt:10], [NSNumber numberWithInt:5]] color:color cornerRadius:radius];
+    [self setDashedBorderWithColor:color width:width cornerRadius:radius lineDashPattern:@[[NSNumber numberWithInt:10], [NSNumber numberWithInt:5]]];
 }
 
-- (void)setDashedBorderWidth:(CGFloat)width lineDashPattern:(NSArray *)lineDashPattern color:(UIColor *)color cornerRadius:(CGFloat)radius {
+- (void)setDashedBorderWithColor:(UIColor *)color width:(CGFloat)width cornerRadius:(CGFloat)radius lineDashPattern:(NSArray *)lineDashPattern {
+    
+    [self.layer setCornerRadius:radius];
+    [self.layer setMasksToBounds:YES];
     
     CAShapeLayer *shapeLayer = [CAShapeLayer layer];
     
@@ -135,6 +139,20 @@
     [shapeLayer setLineDashPattern:lineDashPattern];
     
     [self.layer addSublayer:shapeLayer];
+}
+
+- (void)setShadowWithColor:(UIColor *)color shadowOpacity:(float)shadowOpacity shadowRadius:(CGFloat)shadowRadius shadowOffset:(CGSize)shadowOffset {
+    
+    [self setShadowWithColor:color shadowOpacity:shadowOpacity shadowRadius:shadowRadius shadowOffset:shadowOffset shadowPath:nil];
+}
+
+- (void)setShadowWithColor:(UIColor *)color shadowOpacity:(float)shadowOpacity shadowRadius:(CGFloat)shadowRadius shadowOffset:(CGSize)shadowOffset shadowPath:(UIBezierPath *)shadowPath {
+    
+    [self.layer setShadowColor:color.CGColor];
+    [self.layer setShadowOpacity:shadowOpacity];
+    [self.layer setShadowRadius:shadowRadius];
+    [self.layer setShadowOffset:shadowOffset];
+    [self.layer setShadowPath:shadowPath.CGPath];
 }
 
 #pragma mark -

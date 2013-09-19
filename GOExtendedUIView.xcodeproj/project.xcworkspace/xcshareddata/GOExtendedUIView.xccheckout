@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>32346295-5C6F-4CEB-A5E5-C8AEE083F52F</string>
+	<key>IDESourceControlProjectName</key>
+	<string>GOExtendedUIView</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>1BBBFA89-D74E-4315-80E3-49B53A7BE579</key>
+		<string>https://github.com/goppinath/GOExtendedUIView.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>GOExtendedUIView.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>1BBBFA89-D74E-4315-80E3-49B53A7BE579</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/goppinath/GOExtendedUIView.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>1BBBFA89-D74E-4315-80E3-49B53A7BE579</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>1BBBFA89-D74E-4315-80E3-49B53A7BE579</string>
+			<key>IDESourceControlWCCName</key>
+			<string>GOExtendedUIView</string>
+		</dict>
+	</array>
+</dict>
+</plist>

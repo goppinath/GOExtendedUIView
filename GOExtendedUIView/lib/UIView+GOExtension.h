@@ -40,11 +40,14 @@
 - (void)setWidth:(CGFloat)width height:(CGFloat)height;
 - (void)setX:(CGFloat)x Y:(CGFloat)y width:(CGFloat)width height:(CGFloat)height;
 
-- (void)setBorderWidth:(CGFloat)width color:(UIColor *)color cornerRadius:(CGFloat)radius;
-- (void)setBorderWidth:(CGFloat)width color:(UIColor *)color cornerRadius:(CGFloat)radius backgroundColor:(UIColor *)backgroundColor;
+- (void)setBorderWithColor:(UIColor *)color width:(CGFloat)width cornerRadius:(CGFloat)radius;
+- (void)setBorderWithColor:(UIColor *)color width:(CGFloat)width cornerRadius:(CGFloat)radius backgroundColor:(UIColor *)backgroundColor;
 
-- (void)setDashedBorderWidth:(CGFloat)width color:(UIColor *)color cornerRadius:(CGFloat)radius;
-- (void)setDashedBorderWidth:(CGFloat)width lineDashPattern:(NSArray *)lineDashPattern color:(UIColor *)color cornerRadius:(CGFloat)radius;
+- (void)setDashedBorderWithColor:(UIColor *)color width:(CGFloat)width cornerRadius:(CGFloat)radius;
+- (void)setDashedBorderWithColor:(UIColor *)color width:(CGFloat)width cornerRadius:(CGFloat)radius lineDashPattern:(NSArray *)lineDashPattern;
+
+- (void)setShadowWithColor:(UIColor *)color shadowOpacity:(float)shadowOpacity shadowRadius:(CGFloat)shadowRadius shadowOffset:(CGSize)shadowOffset;
+- (void)setShadowWithColor:(UIColor *)color shadowOpacity:(float)shadowOpacity shadowRadius:(CGFloat)shadowRadius shadowOffset:(CGSize)shadowOffset shadowPath:(UIBezierPath *)shadowPath;
 
 - (void)alignToSuperViewsCenter;
 - (void)alignToSuperViewsCenterWithDifferenceX:(CGFloat)dx Y:(CGFloat)dy;

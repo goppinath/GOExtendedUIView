@@ -19,6 +19,7 @@
 		79981BF017494284005B5771 /* GOViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79981BEF17494284005B5771 /* GOViewController.m */; };
 		79981BF317494284005B5771 /* GOViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79981BF117494284005B5771 /* GOViewController_iPhone.xib */; };
 		79981BF617494284005B5771 /* GOViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79981BF417494284005B5771 /* GOViewController_iPad.xib */; };
+		79A5F4AE17EB64CE00A94DE6 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79A5F4AD17EB64CE00A94DE6 /* QuartzCore.framework */; };
 		79ADCF741750CC14005500F5 /* UIView+GOExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 79ADCF731750CC14005500F5 /* UIView+GOExtension.m */; };
 /* End PBXBuildFile section */
 
@@ -40,6 +41,7 @@
 		79981BEF17494284005B5771 /* GOViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GOViewController.m; sourceTree = "<group>"; };
 		79981BF217494284005B5771 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/GOViewController_iPhone.xib; sourceTree = "<group>"; };
 		79981BF517494284005B5771 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/GOViewController_iPad.xib; sourceTree = "<group>"; };
+		79A5F4AD17EB64CE00A94DE6 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		79ADCF721750CC14005500F5 /* UIView+GOExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIView+GOExtension.h"; path = "lib/UIView+GOExtension.h"; sourceTree = "<group>"; };
 		79ADCF731750CC14005500F5 /* UIView+GOExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView+GOExtension.m"; path = "lib/UIView+GOExtension.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -49,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79A5F4AE17EB64CE00A94DE6 /* QuartzCore.framework in Frameworks */,
 				79981BD717494284005B5771 /* UIKit.framework in Frameworks */,
 				79981BD917494284005B5771 /* Foundation.framework in Frameworks */,
 				79981BDB17494284005B5771 /* CoreGraphics.framework in Frameworks */,
@@ -78,6 +81,7 @@
 		79981BD517494284005B5771 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				79A5F4AD17EB64CE00A94DE6 /* QuartzCore.framework */,
 				79981BD617494284005B5771 /* UIKit.framework */,
 				79981BD817494284005B5771 /* Foundation.framework */,
 				79981BDA17494284005B5771 /* CoreGraphics.framework */,
