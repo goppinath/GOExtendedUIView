@@ -1,6 +1,6 @@
 //
 //  UIView+GOExtension.m
-//  GOExtendedUIView
+//  GOExtendedUIView https://github.com/goppinath/GOExtendedUIView
 //
 //  Created by Goppinath Thurairajah on 5/25/13.
 //  Copyright (c) 2013 Goppinath Thurairajah. http://goppinath.com
@@ -107,16 +107,16 @@
 
 - (void)setBorderWithColor:(UIColor *)color width:(CGFloat)width cornerRadius:(CGFloat)radius {
     
-    [self setBorderWithColor:color width:width cornerRadius:radius backgroundColor:nil];
+    [self.layer setBorderColor:color.CGColor];
+    [self.layer setBorderWidth:width];
+    [self.layer setCornerRadius:radius];
+    [self.layer setMasksToBounds:YES];
 }
 
 - (void)setBorderWithColor:(UIColor *)color width:(CGFloat)width cornerRadius:(CGFloat)radius backgroundColor:(UIColor *)backgroundColor {
     
-    [self.layer setBorderColor:color.CGColor];
-    [self.layer setBorderWidth:width];
-    [self.layer setCornerRadius:radius];
+    [self setBorderWithColor:color width:width cornerRadius:radius];
     [self.layer setBackgroundColor:backgroundColor.CGColor];
-    [self.layer setMasksToBounds:YES];
 }
 
 - (void)setDashedBorderWithColor:(UIColor *)color width:(CGFloat)width cornerRadius:(CGFloat)radius; {

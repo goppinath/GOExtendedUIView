@@ -1,6 +1,6 @@
 //
 //  UIView+GOExtension.h
-//  GOExtendedUIView
+//  GOExtendedUIView https://github.com/goppinath/GOExtendedUIView
 //
 //  Created by Goppinath Thurairajah on 5/25/13.
 //  Copyright (c) 2013 Goppinath Thurairajah. http://goppinath.com
