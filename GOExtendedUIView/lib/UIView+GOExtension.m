@@ -148,6 +148,8 @@
 
 - (void)setShadowWithColor:(UIColor *)color shadowOpacity:(float)shadowOpacity shadowRadius:(CGFloat)shadowRadius shadowOffset:(CGSize)shadowOffset shadowPath:(UIBezierPath *)shadowPath {
     
+    [self setClipsToBounds:NO];
+    
     [self.layer setShadowColor:color.CGColor];
     [self.layer setShadowOpacity:shadowOpacity];
     [self.layer setShadowRadius:shadowRadius];
@@ -231,12 +233,12 @@
 
 - (void)printFrame {
     
-    NSLog(@"%@ ==> Frame::Width is:%f, Height is:%f, X is:%f, Y is:%f", NSStringFromClass([self class]), self.x, self.y, self.width, self.height);
+    NSLog(@"%@ ==> Frame::X is:%f, Y is:%f, Width is:%f, Height is:%f", NSStringFromClass([self class]), self.x, self.y, self.width, self.height);
 }
 
 - (void)printBounds {
     
-    NSLog(@"%@ ==> Bounds::Width is:%f, Height is:%f, X is:%f, Y is:%f", NSStringFromClass([self class]), self.bounds.origin.x, self.bounds.origin.y, self.bounds.size.width, self.bounds.size.height);
+    NSLog(@"%@ ==> Bounds::X is:%f, Y is:%f, Width is:%f, Height is:%f", NSStringFromClass([self class]), self.bounds.origin.x, self.bounds.origin.y, self.bounds.size.width, self.bounds.size.height);
 }
 
 @end

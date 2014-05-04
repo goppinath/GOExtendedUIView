@@ -26,7 +26,9 @@
     self.testView = [[UIView alloc] initWithFrame:CGRectMake(20.0, 80.0, 200.0, 150.0)];
     [self.view addSubview:self.testView];
     
-    [self.testView setBorderWidth:3.0 color:[UIColor orangeColor] cornerRadius:8.0];
+    [self.testView setBorderWithColor:[UIColor orangeColor] width:3.0 cornerRadius:8.0];
+    
+    [self.testView setShadowWithColor:[UIColor blackColor] shadowOpacity:.7 shadowRadius:2 shadowOffset:CGSizeMake(5, 5)];
     
     [self.testView printFrame];
     
