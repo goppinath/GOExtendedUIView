@@ -116,7 +116,7 @@
 - (void)setBorderWithColor:(UIColor *)color width:(CGFloat)width cornerRadius:(CGFloat)radius backgroundColor:(UIColor *)backgroundColor {
     
     [self setBorderWithColor:color width:width cornerRadius:radius];
-    [self.layer setBackgroundColor:backgroundColor.CGColor];
+    [self setBackgroundColor:backgroundColor];
 }
 
 - (void)setDashedBorderWithColor:(UIColor *)color width:(CGFloat)width cornerRadius:(CGFloat)radius; {
